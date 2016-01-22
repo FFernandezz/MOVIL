@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gigabyte.login2.musica">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="193dp"
+        android:layout_height="193dp"
+        android:id="@+id/imageView5"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@mipmap/play" />
+
+</FrameLayout>
