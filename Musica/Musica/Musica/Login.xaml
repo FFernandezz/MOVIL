@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Musica.Login"
+             BackgroundColor="#fc095e">
+  <AbsoluteLayout>
+
+    <Image Source="logo.png" x:Name="profile" Scale="0.7" AbsoluteLayout.LayoutBounds="0.5,0,0.5,0.5" AbsoluteLayout.LayoutFlags="All"/>
+    
+    <Label Text="Play" VerticalOptions="Center" HorizontalOptions="Center" FontSize="40" AbsoluteLayout.LayoutBounds="95,145,100,100" FontAttributes="Bold" TextColor="White"></Label>
+    <Label Text="me" VerticalOptions="Center" HorizontalOptions="Center" FontSize="40" AbsoluteLayout.LayoutBounds="171,145,93,100" FontAttributes="None"  ></Label>
+    <Label Text="Music follow you everwhere you are" HorizontalOptions="Center" FontSize="13" AbsoluteLayout.LayoutBounds="60,195,300,100" FontAttributes="None" TextColor="White"  ></Label>
+    
+    <Label Text="Username"  HorizontalOptions="Center" FontSize="15" AbsoluteLayout.LayoutBounds="20,220,280,100"   ></Label>
+    <Entry  BackgroundColor="White" TextColor="Black" AbsoluteLayout.LayoutBounds="20,240,280,38"/>
+    
+    <Label Text="Password"   HorizontalOptions="Center" FontSize="15" AbsoluteLayout.LayoutBounds="20,285,280,100"   ></Label>
+    <Entry  BackgroundColor="White" TextColor="Black"  AbsoluteLayout.LayoutBounds="20,305,280,38" IsPassword="True"/>
+    
+    <Button x:Name="loginBtn"  FontSize="20" TextColor="White" BackgroundColor="Black" AbsoluteLayout.LayoutBounds="20,355,280,41" FontAttributes="Bold" Clicked="OnButtonClickedLogin" />
+      
+
+  </AbsoluteLayout>
+
+
+</ContentPage>

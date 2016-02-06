@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Musica.Item"
+             BackgroundColor="White">
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <Label  Text="   PLAYme" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" AbsoluteLayout.LayoutBounds="0,0,350,50" FontAttributes="Bold" TextColor="White" BackgroundColor="#fc095e"></Label>
+    <Label
+        Text="Description"  FontAttributes="Bold" AbsoluteLayout.LayoutBounds="30,100,260,25"
+            TextColor="White" BackgroundColor="Black" > </Label> 
+    <Label
+        x:Name="Descripcion"  AbsoluteLayout.LayoutBounds="30,130,260,250"
+            TextColor="Black" BackgroundColor="#ffcce5" >
+        
+       
+      </Label>
+      <Button   Text="Play" FontAttributes="Bold"  Image="play.png" BackgroundColor="Black" Clicked="OnButtonAdvertencia" AbsoluteLayout.LayoutBounds="110,315,110,55"
+            > 
+        
+      </Button>
+    
+  </AbsoluteLayout>
+</ContentPage>

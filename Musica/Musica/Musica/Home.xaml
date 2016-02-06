@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Musica.Home"
+             Title="PlayMe"
+             BackgroundColor="White" >
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <!-- 
+    <Entry Placeholder="Buscar"
+           AbsoluteLayout.LayoutBounds="0.4,0.2,0.6,0.1" AbsoluteLayout.LayoutFlags="All"/>
+           
+     <Button Text="Search Films" AbsoluteLayout.LayoutBounds="0.8,0.2,0.1,0.1" 
+            AbsoluteLayout.LayoutFlags="All"/>         
+    -->
+    
+    <Label  Text="   PLAYme" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" AbsoluteLayout.LayoutBounds="0,0,350,50" FontAttributes="Bold" TextColor="White" BackgroundColor="#fc095e"></Label>
+    
+    <Entry  x:Name="Buscador"
+            TextColor="Black" AbsoluteLayout.LayoutBounds="5,55,225,38" BackgroundColor="#ffcce5"/>
+
+   <Button x:Name="button_search" Clicked="OnButtonClickSearch" Text="Seach" FontSize="15" TextColor="White" BackgroundColor="Black" AbsoluteLayout.LayoutBounds="235,55,80,38" FontAttributes="Bold"  />
+
+    <ListView x:Name="MyList" BackgroundColor="White" AbsoluteLayout.LayoutBounds="10,100,300,360" RowHeight="90"  > 
+       <ListView.ItemTemplate>
+         <DataTemplate>
+           <ViewCell>
+             
+                  <StackLayout  BackgroundColor="Black" Orientation="Vertical">
+                         
+                   
+                    <StackLayout Orientation="Horizontal" Padding="5">
+                          <Image Source="{Binding url}" HeightRequest="85" WidthRequest="85" />
+            
+                          <Label Text="{Binding title}" TextColor="White" FontSize="12"></Label>
+                          <Button   Image="play.png" BackgroundColor="Black" > </Button>
+                          
+                
+                    </StackLayout>
+                 </StackLayout>  
+
+           </ViewCell>
+         </DataTemplate>         
+       
+       </ListView.ItemTemplate>  
+    
+    </ListView>
+    
+  </AbsoluteLayout>
+</ContentPage>
